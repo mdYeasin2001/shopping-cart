@@ -6,6 +6,7 @@ phoneCounterIncreaseBtn.addEventListener('click', function(){
     counterIncrease("phoneCountNumber");
     productCost("totalPhonePrice", 1219);
     productCost("subtotal", 1219);
+    productCost("total", 1219);
     
     
     
@@ -20,6 +21,7 @@ phoneCounterDecreaseBtn.addEventListener('click', function(){
     counterDecrease("phoneCountNumber");
     productCost("totalPhonePrice", -1219);
     productCost("subtotal", -1219);
+    productCost("total", -1219);
 })
 
 // case counter increase button event handler
@@ -29,6 +31,7 @@ caseCounterIncreaseBtn.addEventListener('click', function(){
     counterIncrease("caseCountNumber");
     productCost("totalCasePrice", 59);
     productCost("subtotal", 59);
+    productCost("total", 59);
 })
 
 // case counter decrease button event handler
@@ -38,6 +41,7 @@ caseCounterDecreaseBtn.addEventListener('click', function(){
     counterDecrease("caseCountNumber");
     productCost("totalCasePrice", -59);
     productCost("subtotal", -59);
+    productCost("total", -59);
 })
 
 
@@ -61,3 +65,7 @@ function productCost(id, oneProductValue){
     const totalValue = currentValueNumber + oneProductValue;
     document.getElementById(id).innerText = totalValue;
 }
+//total tax calculation
+const tax = document.getElementById("tax").innerText;
+const taxNumber = parseFloat(tax);
+
