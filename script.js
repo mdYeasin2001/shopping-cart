@@ -1,22 +1,15 @@
 // phone counter increase button event handler
 const phoneCounterIncreaseBtn = document.getElementById('phoneCounterIncrease');
 phoneCounterIncreaseBtn.addEventListener('click', function(){
-    
     counterIncrease("phoneCountNumber");
     productCost("totalPhonePrice", 1219);
     productCost("subtotal", 1219);
     productCost("total", 1219);
-    
-    
-    
-    
-
 })
 
 // phone counter decrease button event handler
 const phoneCounterDecreaseBtn = document.getElementById('phoneCounterDecrease');
 phoneCounterDecreaseBtn.addEventListener('click', function(){
-
     counterDecrease("phoneCountNumber");
     productCost("totalPhonePrice", -1219);
     productCost("subtotal", -1219);
@@ -26,7 +19,6 @@ phoneCounterDecreaseBtn.addEventListener('click', function(){
 // case counter increase button event handler
 const caseCounterIncreaseBtn = document.getElementById('caseCounterIncrease');
 caseCounterIncreaseBtn.addEventListener('click', function(){
-    
     counterIncrease("caseCountNumber");
     productCost("totalCasePrice", 59);
     productCost("subtotal", 59);
@@ -36,7 +28,6 @@ caseCounterIncreaseBtn.addEventListener('click', function(){
 // case counter decrease button event handler
 const caseCounterDecreaseBtn = document.getElementById('caseCounterDecrease');
 caseCounterDecreaseBtn.addEventListener('click', function(){
-    
     counterDecrease("caseCountNumber");
     productCost("totalCasePrice", -59);
     productCost("subtotal", -59);
@@ -99,19 +90,3 @@ function amountRemove(id){
     const currentTotal = totalNumber - productTotalPriceNumber;
     document.getElementById("total").innerText = currentTotal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
