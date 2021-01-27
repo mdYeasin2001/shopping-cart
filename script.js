@@ -12,12 +12,28 @@ phoneCounterIncreaseBtn.addEventListener('click', function(){
 
 })
 
-//phone counter decrease button event handler
+// phone counter decrease button event handler
 const phoneCounterDecreaseBtn = document.getElementById('phoneCounterDecrease');
 phoneCounterDecreaseBtn.addEventListener('click', function(){
 
     counterDecrease("phoneCountNumber");
     productCost("totalPhonePrice", -1219);
+})
+
+// case counter increase button event handler
+const caseCounterIncreaseBtn = document.getElementById('caseCounterIncrease');
+caseCounterIncreaseBtn.addEventListener('click', function(){
+    
+    counterIncrease("caseCountNumber");
+    productCost("totalCasePrice", 59);
+})
+
+// case counter decrease button event handler
+const caseCounterDecreaseBtn = document.getElementById('caseCounterDecrease');
+caseCounterDecreaseBtn.addEventListener('click', function(){
+    
+    counterDecrease("caseCountNumber");
+    productCost("totalCasePrice", -59);
 })
 
 
