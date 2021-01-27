@@ -1,5 +1,4 @@
 // phone counter increase button event handler
-let counter = 1;
 const phoneCounterIncreaseBtn = document.getElementById('phoneCounterIncrease');
 phoneCounterIncreaseBtn.addEventListener('click', function(){
     
@@ -48,14 +47,18 @@ caseCounterDecreaseBtn.addEventListener('click', function(){
 
 // counter increase
 function counterIncrease(id){
-    counter++;
-    const countIncreasedNumber = document.getElementById(id).value = counter;
+    const counterValue = document.getElementById(id).value;
+    let counterValueNumber = parseFloat(counterValue);
+    counterValueNumber++;
+    const countIncreasedNumber = document.getElementById(id).value = counterValueNumber;
     return countIncreasedNumber;
 }
 // counter decrease
 function counterDecrease(id){
-    counter--;
-    const countDecreaseNumber = document.getElementById(id).value = counter;
+    const counterValue = document.getElementById(id).value;
+    let counterValueNumber = parseFloat(counterValue);
+    counterValueNumber--;
+    const countDecreaseNumber = document.getElementById(id).value = counterValueNumber;
     return countDecreaseNumber;
 }
 // product cost calculate
@@ -68,4 +71,19 @@ function productCost(id, oneProductValue){
 //total tax calculation
 const tax = document.getElementById("tax").innerText;
 const taxNumber = parseFloat(tax);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
