@@ -5,6 +5,7 @@ phoneCounterIncreaseBtn.addEventListener('click', function(){
     
     counterIncrease("phoneCountNumber");
     productCost("totalPhonePrice", 1219);
+    productCost("subtotal", 1219);
     
     
     
@@ -18,6 +19,7 @@ phoneCounterDecreaseBtn.addEventListener('click', function(){
 
     counterDecrease("phoneCountNumber");
     productCost("totalPhonePrice", -1219);
+    productCost("subtotal", -1219);
 })
 
 // case counter increase button event handler
