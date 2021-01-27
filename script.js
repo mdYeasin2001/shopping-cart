@@ -72,6 +72,34 @@ function productCost(id, oneProductValue){
 const tax = document.getElementById("tax").innerText;
 const taxNumber = parseFloat(tax);
 
+// phone price remove button event handler
+const phoneRemoveBtn = document.getElementById('phoneRemove');
+phoneRemoveBtn.addEventListener('click', function(){
+    document.getElementById("phoneCart").style.display = "none";
+    amountRemove("totalPhonePrice");
+})
+
+// case price remove button event handler
+const caseRemoveBtn = document.getElementById("caseRemove");
+caseRemoveBtn.addEventListener('click', function(){
+    document.getElementById("caseCart").style.display = "none";
+    amountRemove("totalCasePrice");
+})
+
+// amount remove from subtotal and total
+function amountRemove(id){
+    const productTotalPrice = document.getElementById(id).innerText;
+    const productTotalPriceNumber = parseFloat(productTotalPrice);
+    const subtotal = document.getElementById('subtotal').innerText;
+    const subtotalNumber = parseFloat(subtotal);
+    const currentSubtotal = subtotalNumber - productTotalPriceNumber;
+    document.getElementById("subtotal").innerText = currentSubtotal;
+    const total = document.getElementById("total").innerText;
+    const totalNumber = parseFloat(total);
+    const currentTotal = totalNumber - productTotalPriceNumber;
+    document.getElementById("total").innerText = currentTotal;
+}
+
 
 
 
