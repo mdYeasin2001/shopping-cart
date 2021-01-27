@@ -28,6 +28,7 @@ caseCounterIncreaseBtn.addEventListener('click', function(){
     
     counterIncrease("caseCountNumber");
     productCost("totalCasePrice", 59);
+    productCost("subtotal", 59);
 })
 
 // case counter decrease button event handler
@@ -36,6 +37,7 @@ caseCounterDecreaseBtn.addEventListener('click', function(){
     
     counterDecrease("caseCountNumber");
     productCost("totalCasePrice", -59);
+    productCost("subtotal", -59);
 })
 
 
